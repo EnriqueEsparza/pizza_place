@@ -27,3 +27,38 @@ Pizza.prototype.toppings = function(toppings) {
     this.cost;
   }
 }
+
+$(document).ready(function(){
+  var newPizza = new Pizza();
+  newPizza.cost = 0;
+
+
+  $(function(){
+    var $select = $(".1-100");
+    for (i=1;i<=100;i++){
+      $select.append($('<option></option>').val(i).html(i))
+    }
+  });
+
+
+
+  $("form#order").submit(function(event){
+    newPizza.cost = 10;
+    var inputtedQuantity = parseInt($("select.1-100").val());
+    var inputtedSize = $("select#size").val();
+    var inputtedToppings = $("select#toppings").val();
+
+    // newPizza.quantity(inputtedQuantity)
+    // newPizza.size(inputtedSize)
+    // newPizza.toppings(inputtedToppings)
+
+    (newPizza.cost + newPizza.size(inputtedSize) + newPizza.toppings(inputtedToppings)) * newPizza.quantity(inputtedQuantity)
+
+    $(".order-total").text(newPizza.cost);
+
+    event.preventDefault();
+
+
+
+  });
+});
