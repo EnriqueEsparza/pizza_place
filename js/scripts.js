@@ -1,23 +1,23 @@
-var countUpBy = function(number) {
-    return "25";
-};
-
-
-$(document).ready(function() {
-  $('countUpBy form').submit(function(event) {
-    var userNumbers = ["user_number", "multiplier"];
-
-    userNumbers.forEach(function(userNumber) {
-      var userInput = $("input#" + userNumber).val();
-      $("." + userNumber).text(userInput);
-    });
-
-
-
-    $("#result").show();
-    event.preventDefault();
-  });
-});
+// var countUpBy = function(number) {
+//     return "25";
+// };
+//
+//
+// $(document).ready(function() {
+//   $('countUpBy form').submit(function(event) {
+//     var userNumbers = ["user_number", "multiplier"];
+//
+//     userNumbers.forEach(function(userNumber) {
+//       var userInput = $("input#" + userNumber).val();
+//       $("." + userNumber).text(userInput);
+//     });
+//
+//
+//
+//     $("#result").show();
+//     event.preventDefault();
+//   });
+// });
 
 
 
