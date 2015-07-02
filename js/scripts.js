@@ -1,37 +1,29 @@
-// var countUpBy = function(number) {
-//     return "25";
-// };
-//
-//
-// $(document).ready(function() {
-//   $('countUpBy form').submit(function(event) {
-//     var userNumbers = ["user_number", "multiplier"];
-//
-//     userNumbers.forEach(function(userNumber) {
-//       var userInput = $("input#" + userNumber).val();
-//       $("." + userNumber).text(userInput);
-//     });
-//
-//
-//
-//     $("#result").show();
-//     event.preventDefault();
-//   });
-// });
+function Pizza(cost) {
+  this.cost = 10;
+}
 
+Pizza.prototype.quantity = function(quantity) {
+  this.cost *= quantity
+}
 
+Pizza.prototype.size = function(size) {
+  if(size === "Large") {
+    this.cost += 5;
+  } else if(size === "Medium") {
+    this.cost += 3;
+  } else {
+    this.cost;
+  }
+}
 
-// $(document).ready(function() {
-//   $("form#leap-year").submit(function(event) {
-//     var year = parseInt($("input#year").val());
-//     var result = leapYear(year);
-//
-//     $(".year").text(year);
-//     if (!result) {
-//       $(".not").text("not");
-//     }
-//
-//     $("#result").show();
-//     event.preventDefault();
-//   });
-// });
+Pizza.prototype.toppings = function(toppings) {
+  if(toppings === "Supreme") {
+    this.cost += 5;
+  } else if(toppings === "Meat"){
+    this.cost += 4;
+  } else if(toppings === "Veggie"){
+    this.cost += 2;
+  } else{
+    this.cost;
+  }
+}

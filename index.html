@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza Bar</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1>Pizza Bar</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+
+        <h3>Select your pizza</h3>
+
+        <div id="order-form">
+          <form id="order">
+
+            <div class="form-group" style="float:left;">
+              <select id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="float:left;">
+              <select id="size">
+                <option value="Small">Small Pizza ($10)</option>
+                <option value="Medium">Medium Pizza ($13)</option>
+                <option value="Large">Large Pizza ($15)</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="float:left;">
+              <select id="toppings">
+                <option value="Cheese">Cheese Pizza (+$0)</option>
+                <option value="Veggie">Veggie Lovers Pizza (+$2)</option>
+                <option value="Meat">Meat Lovers Pizza (+$4)</option>
+                <option value="Supreme">Supreme Pizza (+$5)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-success">Add to order</button>
+          </form>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+      </div>
+      <div class="col-sm-4">
+        <div id="burger-order">
+          <div class="clear" style="float:left;">
+            <button type="clear" class="btn btn-warning clear-orders">Clear orders</button>
+          </div>
+
+
+          <div class="grand-total" style="float:left;">
+            <h3>Order total:</h3>
+            <h2 class="order-total"></h2>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
