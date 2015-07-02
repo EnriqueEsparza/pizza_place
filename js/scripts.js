@@ -54,7 +54,7 @@ $(document).ready(function(){
 
     (newPizza.cost + newPizza.size(inputtedSize) + newPizza.toppings(inputtedToppings)) * newPizza.quantity(inputtedQuantity)
 
-    $(".order-total").text(newPizza.cost);
+    $(".order-total").text("$" + newPizza.cost);
 
     event.preventDefault();
 

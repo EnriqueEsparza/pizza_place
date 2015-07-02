@@ -1,5 +1,30 @@
-.form-group {
+body h3, h2 {
+  color: white;
+}
+
+.grand-total {
+  width: 250px;
+}
+
+.grand-total h3 {
+  width: 160px;
+  margin: 0px;
+}
+
+.grand-total h2 {
+  float: left;
+  margin: 0,0,0,0;
+}
+
+.jumbotron {
+  background: url("img/Page-Background-4.jpg");
+  color: #FFF;
+}
+
+.form-group  {
+
   float:left;
+
 }
 
 .col-sm-12 {

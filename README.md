@@ -2,7 +2,7 @@ Pizza Place
 
 Github: https://github.com/EnriqueEsparza/pizza_place.git
 
-Heroku:
+Bitballoon:http://enrique-pizza.bitballoon.com/
 
 Description This app allows you to order pizza and get a total based on quantity, size and toppings.
 
